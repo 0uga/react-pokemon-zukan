@@ -22,7 +22,7 @@ const PokemonList: React.FC = () => {
     initialPageParam: 0,
     getNextPageParam: (lastPage, pages) => {
       if (lastPage.next) {
-        return pages.length * 20;
+        return pages.length * INITIAL_POKEMON_LIST_LIMIT;
       }
       return undefined;
     },
